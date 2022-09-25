@@ -18,5 +18,7 @@ public class IO {
         System.out.println("No of lines in a file : " + linecount);
         System.out.println("No of characters in a file : " + charcount);
         System.out.println("File path : " + read);
+        read.close();
+        write.close();
     }
 }
