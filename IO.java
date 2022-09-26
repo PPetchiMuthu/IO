@@ -5,12 +5,13 @@ import java.util.Scanner;
 
 public class IO {
     public void readMyFile() {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Read from ");
+        String file1 = scan.nextLine();
+        System.out.print("Write in ");
         try {
-            Scanner scan = new Scanner(System.in);
-            System.out.print("Read from ");
-            String file1 = scan.nextLine();
             FileReader read = new FileReader(file1);
-            System.out.print("Write in ");
             String file2 = scan.nextLine();
             FileWriter write = new FileWriter(file2);
             int lineCount = 1, charCount = 0, n;
